@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.wrap{
+  @apply max-w-[1600px] mx-auto px-5;
+}
+
+.links{
+  @apply block py-2 px-3 text-textT rounded hover:text-primaryP hover:bg-slate-100 md:hover:bg-transparent  md:p-0   
+}
+.active{
+  color:rgba(241, 145, 61)
+}
+.swiper-pagination-bullet-active {
+  background-color: rgba(241, 145, 61) !important; /* Active bullet color */
+  opacity: 1;
+}
+.margin{
+  @apply my-[80px]
+}
+.card-btn{
+  @apply relative text-textT border border-2 border-primaryP rounded inline cursor-pointer  px-3 pb-2 py-1 before:bg-primaryP hover:rounded-b-none before:absolute before:-bottom-0 before:-left-0  before:block before:h-[3px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100
+}
+
+.li{
+  @apply transition-colors duration-300 ease-linear text-textT/80 hover:text-textT
+}
+.swiper-button-next, .swiper-button-prev {
+  display: none !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-accentA/5 
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-primaryP/10 rounded-2xl
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(241, 145, 61); /* Darker blue on hover */
+}
+.InputElement{
+  color: #bec5c5;
+}
